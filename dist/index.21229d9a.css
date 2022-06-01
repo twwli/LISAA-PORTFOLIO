@@ -39,6 +39,7 @@ a {
   width: 100%;
   height: 100%;
   pointer-events: none;
+  opacity: .25;
   z-index: -1;
   position: fixed;
   top: 0;
@@ -178,6 +179,30 @@ strong {
   .overlay__btn:first-child {
     margin-bottom: 1rem;
   }
+}
+
+.grabbable {
+  cursor: move;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.windows {
+  position: absolute;
+  inset: 0;
+}
+
+.windows li {
+  text-transform: uppercase;
+  background: #fff;
+  border: 1px solid #ffffff20;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  box-shadow: 0 .75rem 2rem #0000001a;
 }
 
 /*# sourceMappingURL=index.21229d9a.css.map */

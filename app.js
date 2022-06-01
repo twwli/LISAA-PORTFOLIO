@@ -3,6 +3,7 @@ import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
 import SimplexNoise from "simplex-noise";
 import hsl from "hsl-to-hex";
 import debounce from "debounce";
+import Window from "./js/window";
 
 // Generative landing page code by George Francis https://dev.to/georgedoescode
 // https://dev.to/georgedoescode/create-a-generative-landing-page-webgl-powered-background-animation-3nl0
@@ -104,7 +105,8 @@ function random(min, max) {
       this.xOff = random(0, 1000);
       this.yOff = random(0, 1000);
       // how quickly the noise/self similar random values step through time
-      this.inc = 0.002;
+      // Speed
+      this.inc = 0.0005;
   
       // PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
       this.graphics = new PIXI.Graphics();
@@ -185,7 +187,7 @@ function random(min, max) {
     // auto adjust size to fit the current window
     resizeTo: window,
     // transparent background, we will be creating a gradient background later using CSS
-    transparent: true
+    backgroundAlpha: 0
   });
   
   // Create colour palette
@@ -219,7 +221,7 @@ function random(min, max) {
     });
   }
   
-  document
+  /* document
     .querySelector(".overlay__btn--colors")
     .addEventListener("click", () => {
       colorPalette.setColors();
@@ -228,4 +230,40 @@ function random(min, max) {
       orbs.forEach((orb) => {
         orb.fill = colorPalette.randomColor();
       });
-    });
+    }); */
+
+
+/* Random Tiles */
+
+const windowElements = document.querySelectorAll(".windows li");
+const windowList = [];
+
+window.maxZIndex = 0;
+
+windowElements.forEach((el) => {
+  windowList.push(new Window(el));
+});
+
+window.addEventListener("mouseup", () => {
+  windowList.forEach((win) => {
+    win.isGrabbed = false;
+    win.el.classList.remove("is-grabbed");
+  });
+});
+
+window.addEventListener("mousemove", (e) => {
+  windowList.forEach((win) => {
+    //console.log(e);
+    if (win.isGrabbed) {
+      win.el.style.transform = `translate3d(${
+        e.clientX - win.grabOffset.x
+      }px, ${e.clientY - win.grabOffset.y}px, 0)`;
+    }
+  });
+});
+
+window.addEventListener("resize", () => {
+  windowList.forEach((win) => {
+    win.setWindowPosition();
+  });
+});

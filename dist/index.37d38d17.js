@@ -512,6 +512,8 @@ var _hslToHex = require("hsl-to-hex");
 var _hslToHexDefault = parcelHelpers.interopDefault(_hslToHex);
 var _debounce = require("debounce");
 var _debounceDefault = parcelHelpers.interopDefault(_debounce);
+var _window = require("./js/window");
+var _windowDefault = parcelHelpers.interopDefault(_window);
 // Generative landing page code by George Francis https://dev.to/georgedoescode
 // https://dev.to/georgedoescode/create-a-generative-landing-page-webgl-powered-background-animation-3nl0
 // return a random number within a range
@@ -581,7 +583,8 @@ class Orb {
         this.xOff = random(0, 1000);
         this.yOff = random(0, 1000);
         // how quickly the noise/self similar random values step through time
-        this.inc = 0.002;
+        // Speed
+        this.inc = 0.0005;
         // PIXI.Graphics is used to draw 2d primitives (in this case a circle) to the canvas
         this.graphics = new _pixiJs.Graphics();
         this.graphics.alpha = 0.825;
@@ -644,7 +647,7 @@ const app = new _pixiJs.Application({
     // auto adjust size to fit the current window
     resizeTo: window,
     // transparent background, we will be creating a gradient background later using CSS
-    transparent: true
+    backgroundAlpha: 0
 });
 // Create colour palette
 const colorPalette = new ColorPalette();
@@ -669,15 +672,40 @@ else orbs.forEach((orb)=>{
     orb.update();
     orb.render();
 });
-document.querySelector(".overlay__btn--colors").addEventListener("click", ()=>{
-    colorPalette.setColors();
-    colorPalette.setCustomProperties();
-    orbs.forEach((orb)=>{
+/* document
+    .querySelector(".overlay__btn--colors")
+    .addEventListener("click", () => {
+      colorPalette.setColors();
+      colorPalette.setCustomProperties();
+  
+      orbs.forEach((orb) => {
         orb.fill = colorPalette.randomColor();
+      });
+    }); */ /* Random Tiles */ const windowElements = document.querySelectorAll(".windows li");
+const windowList = [];
+window.maxZIndex = 0;
+windowElements.forEach((el)=>{
+    windowList.push(new (0, _windowDefault.default)(el));
+});
+window.addEventListener("mouseup", ()=>{
+    windowList.forEach((win)=>{
+        win.isGrabbed = false;
+        win.el.classList.remove("is-grabbed");
+    });
+});
+window.addEventListener("mousemove", (e)=>{
+    windowList.forEach((win)=>{
+        //console.log(e);
+        if (win.isGrabbed) win.el.style.transform = `translate3d(${e.clientX - win.grabOffset.x}px, ${e.clientY - win.grabOffset.y}px, 0)`;
+    });
+});
+window.addEventListener("resize", ()=>{
+    windowList.forEach((win)=>{
+        win.setWindowPosition();
     });
 });
 
-},{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
+},{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./js/window":"6mrCO"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "utils", ()=>_utils);
@@ -37956,6 +37984,56 @@ module.exports = hslToRgb;
 debounce.debounce = debounce;
 module.exports = debounce;
 
-},{}]},["apt9a","l9KRs"], "l9KRs", "parcelRequire94c2")
+},{}],"6mrCO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+class Window {
+    constructor(el, initX, initY){
+        this.el = el;
+        let height = 300;
+        let width = 300;
+        this.el.style.zIndex = window.maxZIndex++;
+        this.isGrabbed = false;
+        this.isInit = false;
+        this.grabOffset = {
+            x: 0,
+            y: 0
+        };
+        if (this.el.dataset.width && this.el.dataset.height) {
+            width = this.el.dataset.width;
+            height = this.el.dataset.height;
+        }
+        this.el.style.width = width + "px";
+        this.el.style.height = height + "px";
+        const rectangle = this.el.getBoundingClientRect();
+        this.posX = Math.random() * (window.innerWidth - rectangle.width);
+        this.posY = Math.random() * (window.innerHeight - rectangle.height);
+        this.setWindowPosition();
+        el.addEventListener("mousedown", (e)=>this.onMouseDown(e));
+    }
+    onMouseDown(e) {
+        //console.log(e);
+        this.el.style.zIndex = window.maxZIndex++;
+        this.isGrabbed = true;
+        this.el.classList.add("is-grabbed");
+        //computing offset between mouse and card origin
+        const rectangle = this.el.getBoundingClientRect();
+        this.grabOffset = {
+            x: e.clientX - rectangle.x,
+            y: e.clientY - rectangle.y
+        };
+    }
+    setWindowPosition() {
+        const rectangle = this.el.getBoundingClientRect();
+        if (this.el.dataset.initX && this.el.dataset.initY) {
+            this.posX = this.el.dataset.initX / 100 * (window.innerWidth - rectangle.width);
+            this.posY = this.el.dataset.initY / 100 * (window.innerHeight - rectangle.height);
+        }
+        this.el.style.transform = `translate3d(${this.posX}px, ${this.posY}px, 0)`;
+    }
+}
+exports.default = Window;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["apt9a","l9KRs"], "l9KRs", "parcelRequire94c2")
 
 //# sourceMappingURL=index.37d38d17.js.map
