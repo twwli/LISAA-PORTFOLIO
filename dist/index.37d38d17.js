@@ -681,7 +681,7 @@ else orbs.forEach((orb)=>{
       orbs.forEach((orb) => {
         orb.fill = colorPalette.randomColor();
       });
-    }); */ /* Random Tiles */ const windowElements = document.querySelectorAll(".windows li");
+    }); */ /* Random Tiles */ const windowElements = document.querySelectorAll(".windows .tile");
 const windowList = [];
 window.maxZIndex = 0;
 windowElements.forEach((el)=>{
@@ -704,8 +704,19 @@ window.addEventListener("resize", ()=>{
         win.setWindowPosition();
     });
 });
+/* Rolling Eyes Smiley */ document.querySelector("body").addEventListener("mousemove", eyeball);
+function eyeball() {
+    var eye1 = document.querySelectorAll(".eye");
+    eye1.forEach(function(eye) {
+        let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+        let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rot = radian * (180 / Math.PI) * -1 + 270;
+        eye.style.transform = "rotate(" + rot + "deg)";
+    });
+}
 
-},{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./js/window":"6mrCO"}],"dsYej":[function(require,module,exports) {
+},{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "utils", ()=>_utils);
