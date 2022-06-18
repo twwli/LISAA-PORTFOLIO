@@ -217,6 +217,7 @@ strong {
   align-items: center;
   display: flex;
   position: relative;
+  transform: scale(.5);
 }
 
 .face:hover {
