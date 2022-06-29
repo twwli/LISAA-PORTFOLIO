@@ -7,9 +7,9 @@ Made with:
 
 # READINGS
 
-WordPress: https://wordpress.com and https://wordpress.org
-Squarespace: https://squarespace.com
-Semplice: https://www.semplice.com
-Webflow: https://webflow.com #nocode
-Readymag: https://readymag.com #nocode
-Zyro: https://zyro.com #nocode
+- WordPress: https://wordpress.com and https://wordpress.org
+- Squarespace: https://squarespace.com
+- Semplice: https://www.semplice.com
+- Webflow: https://webflow.com #nocode
+- Readymag: https://readymag.com #nocode
+- Zyro: https://zyro.com #nocode
