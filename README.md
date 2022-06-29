@@ -23,7 +23,9 @@ Made with:
 **Web Development Platforms**
 - WordPress: https://wordpress.com and https://wordpress.org
 - Squarespace: https://squarespace.com
+- Carrd: https://carrd.co
 - Semplice: https://www.semplice.com
 - Webflow: https://webflow.com #nocode
 - Readymag: https://readymag.com #nocode
 - Zyro: https://zyro.com #nocode
+
