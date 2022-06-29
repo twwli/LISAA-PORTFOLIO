@@ -5,8 +5,7 @@ Made with:
 - https://parceljs.org
 - https://pixijs.com
 
-# READINGS
-
+**Web Development Platforms**
 - WordPress: https://wordpress.com and https://wordpress.org
 - Squarespace: https://squarespace.com
 - Semplice: https://www.semplice.com
