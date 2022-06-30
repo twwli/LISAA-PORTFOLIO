@@ -17,8 +17,11 @@ Made with:
 - The case against portfolio templates by Tobias van Schneider: https://vanschneider.com/blog/portfolio-tips/the-case-against-portfolio-tempaltes/ 
 - https://www.awwwards.com/how-to-deliver-a-highly-emotional-and-interactive-experience-with-a-low-carbon-impact.html 
 
-**Toolss**
-
+**Tools**
+- Github: https://github.com
+- Netlify: https://www.netlify.com
+- Vercel: https://vercel.com
+- Freenom: https://www.freenom.com
 
 **Web Development Platforms**
 - WordPress: https://wordpress.com and https://wordpress.org
