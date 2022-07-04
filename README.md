@@ -5,7 +5,7 @@ Made with:
 - https://parceljs.org
 - https://pixijs.com
 
-** Command**
+**Command**<br />
 $ npx parcel index.html
 
 **Case Studiess**
