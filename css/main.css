@@ -34,6 +34,7 @@
     font-family: var(--font-family);
     color: var(--dark-color);
     background: var(--bg-gradient);
+    line-height: 1.5;
   }
 
   a {
@@ -54,6 +55,10 @@
   
   strong {
     font-weight: 600;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-weight: normal;
   }
 
   /* Overlay */
@@ -209,10 +214,7 @@
 
   .windows .tile {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
+    overflow: hidden;
   }
 
   .windows .tile.bg-white {
@@ -220,6 +222,14 @@
     box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
     border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  .windows .tile .tile-header {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f5f5f5;
+    text-align: center;
   }
 
   /* Moving Eyes */

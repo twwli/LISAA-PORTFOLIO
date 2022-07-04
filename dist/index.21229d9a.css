@@ -27,6 +27,7 @@ body {
   background: var(--bg-gradient);
   place-items: center;
   padding: 2rem;
+  line-height: 1.5;
   display: grid;
 }
 
@@ -48,6 +49,10 @@ a {
 
 strong {
   font-weight: 600;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
 }
 
 .overlay {
@@ -194,11 +199,8 @@ strong {
 }
 
 .windows .tile {
-  text-transform: uppercase;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   position: fixed;
+  overflow: hidden;
 }
 
 .windows .tile.bg-white {
@@ -206,6 +208,14 @@ strong {
   border: 1px solid #ffffff20;
   border-radius: .5rem;
   box-shadow: 0 .75rem 2rem #0000001a;
+}
+
+.windows .tile .tile-header {
+  width: 100%;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  display: block;
 }
 
 .face {
