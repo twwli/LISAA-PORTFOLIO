@@ -19,6 +19,11 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  ::selection {
+    color: inherit; 
+    background: transparent;
+  }
   
   html {
     -webkit-font-smoothing: antialiased;
