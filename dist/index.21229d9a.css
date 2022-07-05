@@ -329,10 +329,14 @@ h1, h2, h3, h4, h5 {
 .check-list__item {
   color: var(--c-black);
   font-size: var(--fs-xsmall);
-  border-bottom: 1px solid #d5d5d5;
+  border-bottom: 1px solid #e5e5e5;
   align-items: center;
   padding: 1rem 0;
   display: flex;
+}
+
+.check-list__item:last-of-type {
+  border-bottom: none;
 }
 
 .check-list__item input[type="checkbox"] {
