@@ -46,6 +46,8 @@
       color: inherit;
       text-decoration: none;
   }
+
+  li {list-style: none;}
   
   .orb-canvas {
     position: fixed;
@@ -217,10 +219,6 @@
     cursor: -webkit-grab;
   }
 
-  .is-grabbed a {
-    pointer-events: none;
-  }
-
   .windows {
     position: absolute;
     inset: 0;
@@ -267,7 +265,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    list-style: none;
   }
 
   .is-app-list ul li h4 {
@@ -320,7 +317,6 @@
   }
 
   .is-tools-list ul li {
-    list-style: none;
     margin-bottom: 5px;
   }
 
@@ -397,6 +393,27 @@
   .check-list__item input[type=checkbox]:checked+* {
     text-decoration: line-through;
     opacity: .5;
+  }
+
+  /* */
+
+  .is-reading-list {
+    padding: 20px 20px;
+  }
+
+  .is-reading-list li a {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+
+  .is-reading-list li a h4 {
+    font-weight: bold;
+  }
+
+  .article-author {
+    font-size: .85em;
   }
 
   /* Contact BTN */
