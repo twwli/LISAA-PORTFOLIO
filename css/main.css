@@ -335,19 +335,72 @@
     margin-right: 10px;
   }
 
+  /* Tile Type is Check List */
+
+  .is-check-list {
+    padding: 0 20px 20px;
+  }
+
+  .check-list__items {
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+  }
+
+  .check-list__item {
+    display: flex;
+    align-items: center;
+    color: var(--c-black);
+    font-size: var(--fs-xsmall);
+    border-bottom: 1px solid #d5d5d5;
+    padding: 1rem 0;
+  }
+
+  .check-list__item input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px var(--dark-color);
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: background-color 150ms ease,opacity 150ms ease;
+    outline: 0;
+  }
+
+  .check-list__item input[type=checkbox]:checked {
+    background-color: var(--dark-color);
+  }
+
+  .check-list__item input[type=text] {
+    flex: 1;
+    color: inherit;
+    background: transparent;
+    border: none;
+    padding: 0;
+    outline: 0;
+    margin-left: 12px;
+    width: 100%;
+    font-size: 1.05em;
+  }
+
+  .check-list__item input[type=checkbox]:checked+* {
+    text-decoration: line-through;
+    opacity: .5;
+}
 
 
   /* Moving Eyes */
 
-  .face {
-    position: relative;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background-color: #ffcd00;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+ .face {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #ffcd00;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
 .face:hover {
@@ -355,15 +408,15 @@
 }
 
 .face:before {
-content: '';
-position: absolute;
-top: 45px;
-width: 37px;
-height: 17px;
-border-bottom-left-radius: 17px;
-border-bottom-right-radius: 17px;
-background: #b57700;
-transition: 0.5s;
+  content: '';
+  position: absolute;
+  top: 45px;
+  width: 37px;
+  height: 17px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+  background: #b57700;
+  transition: 0.5s;
 }
 
 .face:hover:before {
