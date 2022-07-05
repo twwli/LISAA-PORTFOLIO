@@ -8,7 +8,7 @@ One-pager for LISAA UX workshop — Strasbourg 2021
 **Command**<br />
 $ npx parcel index.html
 
-**Case Studiess**
+**Case Studies**
 - The portfolio case study is broken by Tobias van Schneider: https://vanschneider.com/blog/portfolio-tips/the-old-case-study-is-not-working/ 
 - https://vanschneider.com/blog/portfolio-tips/your-case-studies-contain-clues-to-your-future/ 
 
