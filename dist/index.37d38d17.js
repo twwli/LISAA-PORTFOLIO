@@ -517,8 +517,8 @@ var _windowDefault = parcelHelpers.interopDefault(_window);
 // Generative landing page code by George Francis https://dev.to/georgedoescode
 // https://dev.to/georgedoescode/create-a-generative-landing-page-webgl-powered-background-animation-3nl0
 // return a random number within a range
-function random(min, max) {
-    return Math.random() * (max - min) + min;
+function random(min1, max) {
+    return Math.random() * (max - min1) + min1;
 }
 // map a number from 1 range to another
 function map(n, start1, end1, start2, end2) {
@@ -715,6 +715,24 @@ function eyeball() {
         eye.style.transform = "rotate(" + rot + "deg)";
     });
 }
+/* Analog Clock */ // Just noticed accessing localStorage is banned from codepen, so disabling saving theme to localStorage
+const deg = 6;
+const hour = document.querySelector(".hour");
+const min = document.querySelector(".min");
+const sec = document.querySelector(".sec");
+const setClock = ()=>{
+    let day = new Date();
+    let hh = day.getHours() * 30;
+    let mm = day.getMinutes() * deg;
+    let ss = day.getSeconds() * deg;
+    hour.style.transform = `rotateZ(${hh + mm / 12}deg)`;
+    min.style.transform = `rotateZ(${mm}deg)`;
+    sec.style.transform = `rotateZ(${ss}deg)`;
+};
+// first time
+setClock();
+// Update every 1000 ms
+setInterval(setClock, 1000);
 
 },{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
