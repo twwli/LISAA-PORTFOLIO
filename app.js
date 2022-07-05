@@ -307,3 +307,115 @@ setClock();
 // Update every 1000 ms
 setInterval(setClock, 1000);
 
+/* Bullshit Jobs Generator */
+
+const firstPart = document.getElementById("first-part");
+const secondPart = document.getElementById("second-part");
+const thirdPart = document.getElementById("third-part");
+
+const firstPartText = [
+  'Lead',
+  'Senior',
+  'Direct',
+  'Corporate',
+  'Dynamic',
+  'Future',
+  'Product',
+  'National',
+  'Regional',
+  'District',
+  'Central',
+  'Global',
+  'Relational',
+  'Customer',
+  'Investor',
+  'Dynamic',
+  'International',
+  'Legacy',
+  'Forward',
+  'Interactive',
+  'Internal',
+  'Human',
+  'Chief',
+  'Principal'
+];
+
+const secondPartText = [
+  'Solutions',
+  'Program',
+  'Brand',
+  'Security',
+  'Research',
+  'Marketing',
+  'Directives',
+  'Implementation',
+  'Integration',
+  'Functionality',
+  'Response',
+  'Paradigm',
+  'Tactics',
+  'Identity',
+  'Markets',
+  'Group',
+  'Resonance',
+  'Applications',
+  'Optimization',
+  'Operations',
+  'Infrastructure',
+  'Intranet',
+  'Communications',
+  'Web',
+  'Branding',
+  'Quality',
+  'Assurance',
+  'Impact',
+  'Mobility',
+  'Ideation',
+  'Data',
+  'Creative',
+  'Configuration',
+  'Accountability',
+  'Interactions',
+  'Factors',
+  'Usability',
+  'Metrics',
+  'Team'
+];
+
+const thirdPartText = [
+  'Supervisor',
+  'Associate',
+  'Executive',
+  'Liason',
+  'Officer',
+  'Manager',
+  'Engineer',
+  'Specialist',
+  'Director',
+  'Coordinator',
+  'Administrator',
+  'Architect',
+  'Analyst',
+  'Designer',
+  'Planner',
+  'Synergist',
+  'Orchestrator',
+  'Technician',
+  'Developer',
+  'Producer',
+  'Consultant',
+  'Assistant',
+  'Facilitator',
+  'Agent',
+  'Representative',
+  'Strategist'
+];
+
+const InitFirstPartIndex= parseInt(Math.random()*firstPartText.length);
+firstPart.innerHTML =  firstPartText[InitFirstPartIndex];
+
+const InitSecondPartIndex= parseInt(Math.random()*secondPartText.length);
+secondPart.innerHTML =  secondPartText[InitSecondPartIndex];
+
+const InitThirdPartIndex= parseInt(Math.random()*thirdPartText.length);
+thirdPart.innerHTML =  thirdPartText[InitThirdPartIndex];
