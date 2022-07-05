@@ -291,6 +291,32 @@ h1, h2, h3, h4, h5 {
   background-color: #f6526e;
 }
 
+.list-container {
+  padding: 30px 20px;
+}
+
+.is-tools-list ul li {
+  margin-bottom: 5px;
+  list-style: none;
+}
+
+.is-tools-list ul li a {
+  border-radius: 2em;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  transition: all .2s ease-in;
+  display: flex;
+}
+
+.is-tools-list ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+.is-tools-list ul li img {
+  margin-right: 10px;
+}
+
 .face {
   width: 75px;
   height: 75px;

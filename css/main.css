@@ -307,6 +307,36 @@
     background-color: #F6526E;
   }
 
+  /* Tile Type is Tools List */
+
+  .list-container {
+    padding: 30px 20px;
+  }
+
+  .is-tools-list ul li {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  .is-tools-list ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 2em;
+    transition: all 200ms ease-in;
+  }
+
+  .is-tools-list ul li a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .is-tools-list ul li img {
+    margin-right: 10px;
+  }
+
+
+
   /* Moving Eyes */
 
   .face {
