@@ -233,13 +233,13 @@ h1, h2, h3, h4, h5 {
   font-size: 1em;
 }
 
-.tile .is-app-list ul {
+.is-app-list ul {
   flex-wrap: wrap;
   padding: 50px 30px 30px;
   display: flex;
 }
 
-.tile .is-app-list ul li {
+.is-app-list ul li {
   width: 33.3333%;
   flex-direction: column;
   align-items: center;
@@ -248,13 +248,13 @@ h1, h2, h3, h4, h5 {
   display: flex;
 }
 
-.tile .is-app-list ul li h4 {
+.is-app-list ul li h4 {
   margin-top: 7px;
   font-size: .85em;
   display: block;
 }
 
-.app-icon {
+.is-app-list .app-icon {
   width: 60px;
   height: 60px;
   background-color: #eee;
@@ -263,31 +263,31 @@ h1, h2, h3, h4, h5 {
   display: block;
 }
 
-.wordpress-icon {
+.is-app-list .wordpress-icon {
   background-color: #00749a;
 }
 
-.squarespace-icon {
+.is-app-list .squarespace-icon {
   background-color: #111;
 }
 
-.carrd-icon {
+.is-app-list .carrd-icon {
   background-color: #454678;
 }
 
-.semplice-icon {
+.is-app-list .semplice-icon {
   background-color: #ffd301;
 }
 
-.webflow-icon {
+.is-app-list .webflow-icon {
   background-color: #4353ff;
 }
 
-.readymag-icon {
+.is-app-list .readymag-icon {
   background-color: #000;
 }
 
-.zyro-icon {
+.is-app-list .zyro-icon {
   background-color: #f6526e;
 }
 

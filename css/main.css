@@ -249,13 +249,13 @@
 
   /* Tile Type is App List */
 
-  .tile .is-app-list ul {
+  .is-app-list ul {
     padding: 50px 30px 30px;
     display: flex;
     flex-wrap: wrap;
   }
 
-  .tile .is-app-list ul li {
+  .is-app-list ul li {
     width: 33.3333%;
     margin-bottom: 30px;
     display: flex;
@@ -264,13 +264,13 @@
     list-style: none;
   }
 
-  .tile .is-app-list ul li h4 {
+  .is-app-list ul li h4 {
     display: block;
     font-size: .85em;
     margin-top: 7px;
   }
 
-  .app-icon {
+  .is-app-list .app-icon {
     display: block;
     width: 60px;
     height: 60px;
@@ -279,31 +279,31 @@
     border-radius: 5px;
   }
 
-  .wordpress-icon {
+  .is-app-list .wordpress-icon {
     background-color: #00749A;
   }
 
-  .squarespace-icon {
+  .is-app-list .squarespace-icon {
     background-color: #111;
   }
 
-  .carrd-icon {
+  .is-app-list .carrd-icon {
     background-color: #454678;
   }
 
-  .semplice-icon {
+  .is-app-list .semplice-icon {
     background-color: #FFD301;
   }
 
-  .webflow-icon {
+  .is-app-list .webflow-icon {
     background-color: #4353FF;
   }
 
-  .readymag-icon {
+  .is-app-list .readymag-icon {
     background-color: #000;
   }
 
-  .zyro-icon {
+  .is-app-list .zyro-icon {
     background-color: #F6526E;
   }
 
