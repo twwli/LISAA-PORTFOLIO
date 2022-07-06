@@ -1,8 +1,8 @@
 import * as PIXI from "/pixi.js";
 import { KawaseBlurFilter } from "/pixi/filter-kawase-blur";
-import SimplexNoise from "simplex-noise";
-import hsl from "hsl-to-hex";
-import debounce from "debounce";
+import SimplexNoise from "/simplex-noise";
+import hsl from "/hsl-to-hex";
+import debounce from "/debounce";
 import Window from "./js/window";
 
 // Generative landing page code by George Francis https://dev.to/georgedoescode
