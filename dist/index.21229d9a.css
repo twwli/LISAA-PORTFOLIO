@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5 {
   border: none;
   border-radius: 1rem;
   padding: 5px 10px;
-  font-size: .875rem;
+  font-size: .75rem;
   font-weight: 600;
   transition: transform .15s;
   display: inline-block;
