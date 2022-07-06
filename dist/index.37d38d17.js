@@ -869,13 +869,17 @@ let date = d.getDate();
 document.getElementById("date").innerHTML = date;
 /* Show/hide Notification */ const el = document.getElementById("notification");
 const gif = document.getElementById("mchammer");
+const close = document.getElementById("close-video");
 setTimeout(()=>{
     el.classList.add("is-visible");
-}, 900000);
+}, 900);
 setTimeout(()=>{
     el.classList.remove("is-visible");
     gif.classList.add("is-visible");
-}, 1020000);
+}, 1020);
+close.addEventListener("click", function() {
+    gif.classList.remove("is-visible");
+});
 
 },{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

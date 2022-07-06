@@ -527,6 +527,14 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
   object-fit: fill;
 }
 
+.hammer-time {
+  /* position: relative; */
+}
+
+#mchammer {
+  overflow: visible;
+}
+
 .notification,
 .hammer-time {
   opacity: 0;
@@ -536,4 +544,22 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
 .is-visible {
   opacity: 1;
   visibility: visible;
+}
+
+.btn-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  cursor: pointer;
+}
+
+.tile-container {
+  position: relative;
+  display: inline-block;
+  background-color: #eee;
 }

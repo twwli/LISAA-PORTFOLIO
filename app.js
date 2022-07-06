@@ -441,13 +441,17 @@ document.getElementById("date").innerHTML = date;
 
 const el = document.getElementById('notification');
 const gif = document.getElementById('mchammer');
+const close = document.getElementById('close-video');
 
 setTimeout(() => {
   el.classList.add("is-visible");
-}, 900000);
+}, 900);
 
 setTimeout(() => {
   el.classList.remove("is-visible");
   gif.classList.add("is-visible");
-}, 1020000);
+}, 1020);
 
+close.addEventListener("click", function() {
+  gif.classList.remove("is-visible");
+});
