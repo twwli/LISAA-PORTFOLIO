@@ -418,4 +418,20 @@ const InitSecondPartIndex= parseInt(Math.random()*secondPartText.length);
 secondPart.innerHTML =  secondPartText[InitSecondPartIndex];
 
 const InitThirdPartIndex= parseInt(Math.random()*thirdPartText.length);
-thirdPart.innerHTML =  thirdPartText[InitThirdPartIndex];
+thirdPart.innerHTML = thirdPartText[InitThirdPartIndex];
+
+/* */
+const d = new Date();
+
+const weekday = ["Dimanche","lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
+
+let day = weekday[d.getDay()];
+document.getElementById("day").innerHTML = day;
+
+const month = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","September","Octobre","Novembre","Décembre"];
+
+let name = month[d.getMonth()];
+document.getElementById("month").innerHTML = name;
+
+let date = d.getDate();
+document.getElementById("date").innerHTML = date;

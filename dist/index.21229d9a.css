@@ -448,8 +448,29 @@ h1, h2, h3, h4, h5 {
   content: "";
   height: 60%;
   width: 1px;
-  background-color: red;
+  background-color: #ff726b;
   border-radius: 2px;
+}
+
+.day-card {
+  background-color: #ff726b;
+  border-radius: .5em;
+  display: flex;
+}
+
+.day-card-container {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  display: flex;
+}
+
+#date {
+  font-size: 65px;
+  line-height: .9em;
 }
 
 /*# sourceMappingURL=index.21229d9a.css.map */

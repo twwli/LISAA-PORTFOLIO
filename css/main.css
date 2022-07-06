@@ -478,7 +478,29 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
 	content: "";
 	height: 60%;
 	width: 1px;
-	background-color: #f00;
+	background-color: #ff726b;
 	border-radius: 2px;
 }
 
+/* Day Card */
+
+.day-card {
+  display: flex;
+  background-color: #ff726b;
+  border-radius: .5em;
+}
+
+.day-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+#date {
+  font-size: 65px;
+  line-height: .9em;
+}

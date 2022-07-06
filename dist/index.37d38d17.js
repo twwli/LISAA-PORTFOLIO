@@ -721,10 +721,10 @@ const hour = document.querySelector(".hour");
 const min = document.querySelector(".min");
 const sec = document.querySelector(".sec");
 const setClock = ()=>{
-    let day = new Date();
-    let hh = day.getHours() * 30;
-    let mm = day.getMinutes() * deg;
-    let ss = day.getSeconds() * deg;
+    let day1 = new Date();
+    let hh = day1.getHours() * 30;
+    let mm = day1.getMinutes() * deg;
+    let ss = day1.getSeconds() * deg;
     hour.style.transform = `rotateZ(${hh + mm / 12}deg)`;
     min.style.transform = `rotateZ(${mm}deg)`;
     sec.style.transform = `rotateZ(${ss}deg)`;
@@ -837,6 +837,36 @@ const InitSecondPartIndex = parseInt(Math.random() * secondPartText.length);
 secondPart.innerHTML = secondPartText[InitSecondPartIndex];
 const InitThirdPartIndex = parseInt(Math.random() * thirdPartText.length);
 thirdPart.innerHTML = thirdPartText[InitThirdPartIndex];
+/* */ const d = new Date();
+const weekday = [
+    "Dimanche",
+    "lundi",
+    "Mardi",
+    "Mercredi",
+    "Jeudi",
+    "Vendredi",
+    "Samedi"
+];
+let day = weekday[d.getDay()];
+document.getElementById("day").innerHTML = day;
+const month = [
+    "Janvier",
+    "F\xe9vrier",
+    "Mars",
+    "Avril",
+    "Mai",
+    "Juin",
+    "Juillet",
+    "Ao\xfbt",
+    "September",
+    "Octobre",
+    "Novembre",
+    "D\xe9cembre"
+];
+let name = month[d.getMonth()];
+document.getElementById("month").innerHTML = name;
+let date = d.getDate();
+document.getElementById("date").innerHTML = date;
 
 },{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
