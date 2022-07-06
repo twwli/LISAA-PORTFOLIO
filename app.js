@@ -420,7 +420,8 @@ secondPart.innerHTML =  secondPartText[InitSecondPartIndex];
 const InitThirdPartIndex= parseInt(Math.random()*thirdPartText.length);
 thirdPart.innerHTML = thirdPartText[InitThirdPartIndex];
 
-/* */
+/* Day Card */
+
 const d = new Date();
 
 const weekday = ["Dimanche","lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];
@@ -435,3 +436,11 @@ document.getElementById("month").innerHTML = name;
 
 let date = d.getDate();
 document.getElementById("date").innerHTML = date;
+
+/* Show/hide Notification */
+
+const el = document.getElementById('notification');
+
+setTimeout(() => {
+  el.style.visibility = 'visible';
+}, 10000);

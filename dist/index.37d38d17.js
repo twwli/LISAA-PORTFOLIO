@@ -684,8 +684,8 @@ else orbs.forEach((orb)=>{
     }); */ /* Random Tiles */ const windowElements = document.querySelectorAll(".windows .tile");
 const windowList = [];
 window.maxZIndex = 0;
-windowElements.forEach((el)=>{
-    windowList.push(new (0, _windowDefault.default)(el));
+windowElements.forEach((el1)=>{
+    windowList.push(new (0, _windowDefault.default)(el1));
 });
 window.addEventListener("mouseup", ()=>{
     windowList.forEach((win)=>{
@@ -837,7 +837,7 @@ const InitSecondPartIndex = parseInt(Math.random() * secondPartText.length);
 secondPart.innerHTML = secondPartText[InitSecondPartIndex];
 const InitThirdPartIndex = parseInt(Math.random() * thirdPartText.length);
 thirdPart.innerHTML = thirdPartText[InitThirdPartIndex];
-/* */ const d = new Date();
+/* Day Card */ const d = new Date();
 const weekday = [
     "Dimanche",
     "lundi",
@@ -867,6 +867,10 @@ let name = month[d.getMonth()];
 document.getElementById("month").innerHTML = name;
 let date = d.getDate();
 document.getElementById("date").innerHTML = date;
+/* Show/hide Notification */ const el = document.getElementById("notification");
+setTimeout(()=>{
+    el.style.visibility = "visible";
+}, 10000);
 
 },{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
