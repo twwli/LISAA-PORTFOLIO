@@ -440,7 +440,14 @@ document.getElementById("date").innerHTML = date;
 /* Show/hide Notification */
 
 const el = document.getElementById('notification');
+const gif = document.getElementById('mchammer');
 
 setTimeout(() => {
-  el.style.visibility = 'visible';
-}, 10000);
+  el.classList.add("is-visible");
+}, 900000);
+
+setTimeout(() => {
+  el.classList.remove("is-visible");
+  gif.classList.add("is-visible");
+}, 1020000);
+

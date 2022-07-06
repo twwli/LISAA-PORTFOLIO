@@ -514,6 +514,7 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
   border-radius: .5em;
   z-index: 999999;
 
+  opacity: 0;
   visibility: hidden;
 }
 
@@ -522,3 +523,17 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
   margin-right: 14px;
 }
 
+.hammer-time video {
+  object-fit: fill;
+}
+
+.notification,
+.hammer-time {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
