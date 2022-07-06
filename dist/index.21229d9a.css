@@ -265,13 +265,6 @@ h1, h2, h3, h4, h5 {
   font-size: .85em;
 }
 
-.btn {
-  background-color: #fff;
-  padding: 20px 40px;
-  font-size: 1.125em;
-  display: flex;
-}
-
 .is-bullshit {
   width: 100%;
   height: 170px;
@@ -490,7 +483,7 @@ h1, h2, h3, h4, h5 {
   right: 15px;
 }
 
-.not-emoji {
+.notification-emoji {
   margin-right: 14px;
   font-size: 2em;
 }

@@ -280,15 +280,6 @@
     font-size: .85em;
   }
 
-  /* Contact BTN */
-
-  .btn {
-    display: flex;
-    padding: 20px 40px;
-    background-color: #fff;
-    font-size: 1.125em;
-  }
-
   /* Tile is bullshit jobs */
 
   .is-bullshit {
@@ -526,9 +517,8 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
   visibility: hidden;
 }
 
-.not-emoji {
+.notification-emoji {
   font-size: 2em;
   margin-right: 14px;
 }
-
 
