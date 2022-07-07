@@ -445,12 +445,12 @@ const close = document.getElementById('close-video');
 
 setTimeout(() => {
   el.classList.add("is-visible");
-}, 900);
+}, 900000);
 
 setTimeout(() => {
   el.classList.remove("is-visible");
   gif.classList.add("is-visible");
-}, 1020);
+}, 1020000);
 
 close.addEventListener("click", function() {
   gif.classList.remove("is-visible");
