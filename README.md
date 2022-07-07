@@ -1,5 +1,5 @@
-# LISAA-UX-SUMMER-2022
-One-pager for LISAA UX workshop — Strasbourg 2021
+# LISAA SUMMER CAMP 2022
+One-pager for LISAA UX workshop — Strasbourg, July 2022
 
 **Made with:**
 - https://parceljs.org
@@ -8,23 +8,13 @@ One-pager for LISAA UX workshop — Strasbourg 2021
 **Command**<br />
 $ npx parcel index.html
 
-**Case Studies**
-- The portfolio case study is broken by Tobias van Schneider: https://vanschneider.com/blog/portfolio-tips/the-old-case-study-is-not-working/ 
-- https://vanschneider.com/blog/portfolio-tips/your-case-studies-contain-clues-to-your-future/ 
-
-**Emotional Design**
-- https://raw.studio/blog/spotify-embodiment-emotional-design 
-- https://dropbox.design/article/designing-with-optimism-in-the-new-work-world 
-
-**Misc**
-- The case against portfolio templates by Tobias van Schneider: https://vanschneider.com/blog/portfolio-tips/the-case-against-portfolio-tempaltes/ 
-- https://www.awwwards.com/how-to-deliver-a-highly-emotional-and-interactive-experience-with-a-low-carbon-impact.html 
-
 **Tools**
 - Github: https://github.com
 - Netlify: https://www.netlify.com
 - Vercel: https://vercel.com
 - Freenom: https://www.freenom.com
+- Notion: https://www.notion.so/ 
+- Slack: https://slack.com/
 
 **Web Development Platforms**
 - WordPress: https://wordpress.com and https://wordpress.org
@@ -34,4 +24,17 @@ $ npx parcel index.html
 - Webflow: https://webflow.com #nocode
 - Readymag: https://readymag.com #nocode
 - Zyro: https://zyro.com #nocode
+- Adobe Portfolio: https://portfolio.adobe.com #nocode
+
+**Readings**
+- https://vanschneider.com/blog/portfolio-tips/write-project-case-studies-portfolio
+- https://medium.com/thinking-design/advice-for-crafting-a-standout-portfolio-5e9c47e84041
+- https://honest-ux-design-portfolio.webflow.io
+- https://www.briefz.biz
+- https://createdbycocoon.com/post/creating-a-great-web-design-portfolio-no-experience
+- https://dev.to/jihedkdiss/how-to-create-a-portfolio-website-for-free-4d0a
+
+<hr />
+
+Website concept inspired by MAD Digital Studio and Alec Babala's websites.
 
