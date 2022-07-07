@@ -543,7 +543,7 @@ https://codepen.io/imvpn22/pen/RwPvOgQ*/
 }
 
 #mchammer {
-  overflow: visible;
+  z-index: 99999999999;
 }
 
 .notification,
