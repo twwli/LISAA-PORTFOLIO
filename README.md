@@ -8,9 +8,14 @@ One-pager for LISAA UX workshop — Strasbourg 2021
 **Command**<br />
 $ npx parcel index.html
 
-**Case Studies**
-- The portfolio case study is broken by Tobias van Schneider: https://vanschneider.com/blog/portfolio-tips/the-old-case-study-is-not-working/ 
-- https://vanschneider.com/blog/portfolio-tips/your-case-studies-contain-clues-to-your-future/ 
+**Readings**
+- https://vanschneider.com/blog/portfolio-tips/write-project-case-studies-portfolio
+- https://medium.com/thinking-design/advice-for-crafting-a-standout-portfolio-5e9c47e84041
+- https://honest-ux-design-portfolio.webflow.io
+- https://www.briefz.biz
+- https://createdbycocoon.com/post/creating-a-great-web-design-portfolio-no-experience
+- https://dev.to/jihedkdiss/how-to-create-a-portfolio-website-for-free-4d0a
+
 
 **Emotional Design**
 - https://raw.studio/blog/spotify-embodiment-emotional-design 
@@ -34,4 +39,8 @@ $ npx parcel index.html
 - Webflow: https://webflow.com #nocode
 - Readymag: https://readymag.com #nocode
 - Zyro: https://zyro.com #nocode
+
+
+
+Website concept inspired by MAD Digital Studio and Alec Babala's websites.
 
