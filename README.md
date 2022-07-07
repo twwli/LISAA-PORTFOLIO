@@ -1,5 +1,5 @@
-# LISAA-UX-SUMMER-2022
-One-pager for LISAA UX workshop — Strasbourg 2021
+# LISAA SUMMER CAMP 2022
+One-pager for LISAA UX workshop — Strasbourg, July 2022
 
 **Made with:**
 - https://parceljs.org
