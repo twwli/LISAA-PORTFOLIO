@@ -880,6 +880,23 @@ setTimeout(()=>{
 close.addEventListener("click", function() {
     gif.classList.remove("is-visible");
 });
+/* Tips */ const tips = document.getElementById("tips");
+const tipsText = [
+    "Include details, but don\u2019t write ten paragraphs about your researches. Nobody\u2019s going to read it.",
+    "A spare but strong portfolio is better than a portfolio filled with work that doesn\u2019t fit your goals.",
+    "Do something weird and memorable. Show why we can\u2019t find someone like you anywhere else.",
+    "Feel free to brag on yourself and don\u2019t be afraid to get personal. You get a free pass here.",
+    "Just ask yourself: what makes you want to click further into the site? What makes you exit fast?",
+    "Focus on presenting your projects, not designing a masterpiece.",
+    "Just be yourself. If you\u2019re funny, be funny. If you\u2019re not funny, be straightforward.",
+    "When possible, get a writer friend to read and edit your case portfolio for you.",
+    "Design is communication, and companies want to know you can communicate well.",
+    "Side projects are the perfect way to reveal something about your attitude and motivation.",
+    "Find a unique angle, make something of your own and prove you can think originally.",
+    "Your portfolio is about showcasing the work, it does not need to be a work of art in itself."
+];
+const tipsIndex = parseInt(Math.random() * tipsText.length);
+tips.innerHTML = tipsText[tipsIndex];
 
 },{"pixi.js":"dsYej","@pixi/filter-kawase-blur":"8MuFw","simplex-noise":"FTQ4k","hsl-to-hex":"k2bwO","debounce":"6mekx","./js/window":"6mrCO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dsYej":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

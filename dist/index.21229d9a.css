@@ -308,6 +308,16 @@ h1, h2, h3, h4, h5 {
   bottom: 20px;
 }
 
+.is-protip {
+  padding: 30px 40px;
+}
+
+.is-protip h2 {
+  opacity: .9;
+  font-size: 2em;
+  font-weight: 700;
+}
+
 .face {
   width: 75px;
   height: 75px;
