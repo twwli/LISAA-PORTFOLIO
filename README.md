@@ -1,5 +1,5 @@
 # LISAA-PORTFOLIO G5
-One-pager for LISAA UX workshop — Strasbourg, July 2022< br/>
+One-pager for LISAA UX workshop — Strasbourg, July 2022<br />
 https://lisaa.olivierguillard.dev/portfolio
 
 **Made with:**
