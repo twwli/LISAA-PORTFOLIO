@@ -1,6 +1,6 @@
 import * as PIXI from "pixi.js";
 import { KawaseBlurFilter } from "@pixi/filter-kawase-blur";
-import SimplexNoise from "simplex-noise";
+//import { generateNoise } from "simplex-noise";
 import hsl from "hsl-to-hex";
 import debounce from "debounce";
 import Window from "./js/window";
@@ -19,7 +19,7 @@ function random(min, max) {
   }
   
   // Create a new simplex noise instance
-  const simplex = new SimplexNoise();
+  // const simplex = new SimplexNoise();
   
   // ColorPalette class
   class ColorPalette {
@@ -193,12 +193,12 @@ function random(min, max) {
   // Create colour palette
   const colorPalette = new ColorPalette();
   
-  app.stage.filters = [new KawaseBlurFilter(30, 10, true)];
+  app.stage.filters = [new KawaseBlurFilter(40, 20, true)];
   
   // Create orbs
   const orbs = [];
   
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 20; i++) {
     const orb = new Orb(colorPalette.randomColor());
   
     app.stage.addChild(orb.graphics);
